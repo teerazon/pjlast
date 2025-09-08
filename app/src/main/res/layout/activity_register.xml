@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/background_image"
@@ -134,6 +134,7 @@
 
             <!-- TextView สำหรับข้อความ "Already have an account? Login" -->
             <TextView
+                android:id="@+id/Login_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/already_have_an_account"

@@ -197,4 +197,6 @@ class HistoryActivity : AppCompatActivity() {
         orderAdapter.addOrder(newOrder)
         recyclerView.smoothScrollToPosition(0) // Scroll to top to show new item
     }
+
+
 }

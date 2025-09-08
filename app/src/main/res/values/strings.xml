@@ -9,12 +9,12 @@
     <string name="number">Number</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="already_have_an_account">Already have an account?</string>
+    <string name="already_have_an_account">Already have an account? Login</string>
     <string name="create_account">Create Account</string>
     <string name="login">LOGIN</string>
     <string name="username_login">Username</string>
     <string name="password_login">Password</string>
-    <string name="no_account_yet">No account yet?</string>
+    <string name="no_account_yet">No account yet? Sign in</string>
     <string name="login_button">LOGIN</string>
     <string name="thai_flag_icon" />
     <string name="nonolnwza">nonolnwza</string>
@@ -58,5 +58,6 @@
     <string name="แก้วใหญ่">แก้วใหญ่</string>
     <string name="_20">20 บาท</string>
     <string name="แก้วกลาง">แก้วกลาง</string>
+    <string name="sign_in_of_login">Sign in</string>
 
 </resources>

@@ -201,7 +201,11 @@ class MenuActivity : AppCompatActivity() {
         productAdapter.updateProducts(sampleProducts)
     }
 
+
     private fun onProductClick(product: Product) {
+
+        val intent = Intent(this, MenudetailActivity::class.java)
+
         if (!product.isAvailable) {
             Toast.makeText(this, "${product.name} ขณะนี้ไม่พร้อมให้บริการ", Toast.LENGTH_SHORT).show()
             return
@@ -233,13 +237,15 @@ class MenuActivity : AppCompatActivity() {
         navUser.setOnClickListener {
             // Navigate to User Profile
             Toast.makeText(this, "โปรไฟล์", Toast.LENGTH_SHORT).show()
-            // val intent = Intent(this, ProfileActivity::class.java)
-            // startActivity(intent)
+             val intent = Intent(this, UserinfoActivity::class.java)
+             startActivity(intent)
         }
 
         iconFlag.setOnClickListener {
             // Language switch functionality
             Toast.makeText(this, "เปลี่ยนภาษา", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, LanguageswtichActivity::class.java)
+            startActivity(intent)
         }
     }
 }
