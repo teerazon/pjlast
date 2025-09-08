@@ -121,50 +121,50 @@ class HistoryActivity : AppCompatActivity() {
                 dateTime = "15 มี.ค. 2567 14:30",
                 status = "เสร็จสิ้น",
                 statusColor = ContextCompat.getColor(this, android.R.color.holo_green_dark),
-                menu = "โกโก้",
+                menu = "เผือก",
                 menuSize = "เล็ก",
-                toppings = "ท็อปปิ้ง: มาร์ชแมลโล่, วิปครีม",
-                imageResource = R.drawable.logo_nono
+                toppings = "ท็อปปิ้ง: ไข่มุก",
+                imageResource = R.drawable.product10
             ),
             Order(
                 id = "002",
                 dateTime = "15 มี.ค. 2567 13:45",
                 status = "กำลังทำ",
                 statusColor = ContextCompat.getColor(this, android.R.color.holo_orange_dark),
-                menu = "กาแฟลาเต้",
+                menu = "โยเกิร์ต",
                 menuSize = "กลาง",
-                toppings = "ท็อปปิ้ง: ซีรัปวานิลลา, นมฟองนุ่ม",
-                imageResource = R.drawable.logo_nono
+                toppings = "ท็อปปิ้ง: เยลลี่",
+                imageResource = R.drawable.product02
             ),
             Order(
                 id = "003",
                 dateTime = "15 มี.ค. 2567 12:20",
                 status = "รอการชำระเงิน",
                 statusColor = ContextCompat.getColor(this, android.R.color.holo_red_dark),
-                menu = "ชาเขียว",
+                menu = "นมสด",
                 menuSize = "ใหญ่",
-                toppings = "ท็อปปิ้ง: บอลไข่มุก, วิปครีม, น้ำตาลทราย",
-                imageResource = R.drawable.logo_nono
+                toppings = "ท็อปปิ้ง: ไม่มี",
+                imageResource = R.drawable.product06
             ),
             Order(
                 id = "004",
                 dateTime = "14 มี.ค. 2567 16:15",
                 status = "เสร็จสิ้น",
                 statusColor = ContextCompat.getColor(this, android.R.color.holo_green_dark),
-                menu = "เอสเปรสโซ่",
+                menu = "สตอเบอร์รี่",
                 menuSize = "เล็ก",
-                toppings = "ท็อปปิ้ง: ไม่มี",
-                imageResource = R.drawable.logo_nono
+                toppings = "ท็อปปิ้ง: เยลลี่",
+                imageResource = R.drawable.product04
             ),
             Order(
                 id = "005",
                 dateTime = "14 มี.ค. 2567 11:30",
                 status = "ยกเลิก",
                 statusColor = ContextCompat.getColor(this, android.R.color.darker_gray),
-                menu = "คาปูชิโน่",
+                menu = "โกโก้",
                 menuSize = "กลาง",
-                toppings = "ท็อปปิ้ง: ผงโกโก้, วิปครีม",
-                imageResource = R.drawable.logo_nono
+                toppings = "ท็อปปิ้ง: ไข่มุก",
+                imageResource = R.drawable.product05
             ),
             Order(
                 id = "006",
@@ -173,8 +173,8 @@ class HistoryActivity : AppCompatActivity() {
                 statusColor = ContextCompat.getColor(this, android.R.color.holo_green_dark),
                 menu = "ชาไทย",
                 menuSize = "ใหญ่",
-                toppings = "ท็อปปิ้ง: นมสด, น้ำแข็งเยอะ",
-                imageResource = R.drawable.logo_nono
+                toppings = "ท็อปปิ้ง: ไม่มี",
+                imageResource = R.drawable.product08
             )
         )
 

@@ -127,74 +127,74 @@ class MenuActivity : AppCompatActivity() {
         val sampleProducts = listOf(
             Product(
                 id = "1",
-                name = "โกโก้",
+                name = "มะพร้าว",
                 price = 45.0,
-                description = "โกโก้หอมเข้มข้น",
-                imageResource = R.drawable.logo_nono
+                description = "มะพร้าว",
+                imageResource = R.drawable.product01
             ),
             Product(
                 id = "2",
-                name = "กาแฟลาเต้",
+                name = "โยเกิร์ต",
                 price = 55.0,
-                description = "กาแฟลาเต้นมฟองนุ่ม",
-                imageResource = R.drawable.logo_nono
+                description = "โยเกิร์ต",
+                imageResource = R.drawable.product02
             ),
             Product(
                 id = "3",
-                name = "ชาเขียว",
+                name = "โคล่า",
                 price = 40.0,
-                description = "ชาเขียวญี่ปุ่นแท้",
-                imageResource = R.drawable.logo_nono
+                description = "โคล่า",
+                imageResource = R.drawable.product03
             ),
             Product(
                 id = "4",
-                name = "เอสเปรสโซ่",
+                name = "สตอเบอร์รี่",
                 price = 50.0,
-                description = "กาแฟเอสเปรสโซ่เข้มข้น",
-                imageResource = R.drawable.logo_nono
+                description = "สตอเบอร์รี่",
+                imageResource = R.drawable.product04
             ),
             Product(
                 id = "5",
-                name = "คาปูชิโน่",
+                name = "โกโก้",
                 price = 60.0,
-                description = "คาปูชิโน่หอมกรุ่น",
-                imageResource = R.drawable.logo_nono
+                description = "โกโก้",
+                imageResource = R.drawable.product05
             ),
             Product(
                 id = "6",
-                name = "ชาไทย",
+                name = "นมสด",
                 price = 35.0,
-                description = "ชาไทยแท้รสชาติดั้งเดิม",
-                imageResource = R.drawable.logo_nono
+                description = "นมสด",
+                imageResource = R.drawable.product06
             ),
             Product(
                 id = "7",
-                name = "มอคค่า",
+                name = "ชาเขียว",
                 price = 65.0,
-                description = "มอคค่าผสมช็อกโกแลต",
-                imageResource = R.drawable.logo_nono
+                description = "ชาเขียว",
+                imageResource = R.drawable.product07
             ),
             Product(
                 id = "8",
-                name = "ชาเลมอน",
+                name = "ชาไทย",
                 price = 35.0,
-                description = "ชาเลมอนสดชื่น",
-                imageResource = R.drawable.logo_nono
+                description = "ชาไทย",
+                imageResource = R.drawable.product08
             ),
             Product(
                 id = "9",
-                name = "แฟรปเป้",
+                name = "แคนตาลูป",
                 price = 70.0,
-                description = "แฟรปเป้เย็นๆ",
-                imageResource = R.drawable.logo_nono,
+                description = "เเคนตาลูป",
+                imageResource = R.drawable.product09,
                 isAvailable = false
             ),
             Product(
                 id = "10",
-                name = "อเมริกาโน่",
+                name = "เผือก",
                 price = 45.0,
-                description = "กาแฟอเมริกาโน่ร้อน/เย็น",
-                imageResource = R.drawable.logo_nono
+                description = "เผือก",
+                imageResource = R.drawable.product10
             )
         )
 

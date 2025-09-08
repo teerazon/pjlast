@@ -39,5 +39,24 @@
     <string name="order">Order</string>
     <string name="datetime">Date Time</string>
     <string name="tpt">Toppings</string>
+    <string name="back">Back</string>
+    <string name="cocoa_drink">Cocoa drink</string>
+    <string name="น้ำโกโก้">น้ำโกโก้</string>
+    <string name="สามารถเลือกรูปเเบบได้">สามารถเลือกรูปเเบบได้</string>
+    <string name="ขนาดแก้ว">ขนาดแก้ว</string>
+    <string name="กรุณาเลือก1ข้อ">กรุณาเลือก 1 ข้อ</string>
+    <string name="แก้วเล็ก">แก้วเล็ก</string>
+    <string name="_10">10 บาท</string>
+    <string name="line">__________________________________________________________________________________</string>
+    <string name="กดสั่งซื้อ">กดสั่งซื้อ</string>
+    <string name="เพิ่มเติม">เพิ่มเติม</string>
+    <string name="เพิ่มเยลลี่">เพิ่มเยลลี่</string>
+    <string name="เพิ่มไข่มุก">เพิ่มไข่มุก</string>
+    <string name="_1">เลือกสูงสุด 1 ข้อ</string>
+    <string name="ท็อปปิ้ง">ท็อปปิ้ง</string>
+    <string name="_35">35 บาท</string>
+    <string name="แก้วใหญ่">แก้วใหญ่</string>
+    <string name="_20">20 บาท</string>
+    <string name="แก้วกลาง">แก้วกลาง</string>
 
 </resources>
