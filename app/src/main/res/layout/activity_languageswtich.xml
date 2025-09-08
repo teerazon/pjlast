@@ -1,0 +1,95 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LanguageswtichActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB"
+    android:id="@+id/main">
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/back_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/ic_back_arrow"-->
+    <!--        android:background="?attr/selectableItemBackgroundBorderless"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="16dp" />-->
+
+    <ImageView
+        android:id="@+id/language_globe_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_languageswitch"
+        app:layout_constraintBottom_toTopOf="@+id/language_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/language_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/labelswtichlang"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/thai_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_globe_image" />
+
+    <ImageView
+        android:id="@+id/btnback"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_back"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/thai_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        android:backgroundTint="#FF69B4"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/thai"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/english_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language_text" />
+
+    <Button
+        android:id="@+id/english_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/english"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#FF69B4"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thai_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

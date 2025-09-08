@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- องค์ประกอบหลักของเลย์เอาต์ เป็น ConstraintLayout เพื่อจัดเรียงองค์ประกอบต่างๆ ได้อย่างยืดหยุ่น -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/pink_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <!-- CardView สำหรับสร้างกรอบสีเทามีเงาและมุมโค้งมน -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/register_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="#E0E0E0"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LinearLayout สำหรับจัดเรียงองค์ประกอบในแนวตั้งภายใน CardView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryLight"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <!-- ImageView สำหรับรูปโปรไฟล์ -->
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/user"
+                tools:ignore="ContentDescription" />
+
+            <!-- TextView สำหรับปุ่ม Sign Up -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- EditText สำหรับ Username -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:drawablePadding="8dp"
+                android:inputType="text"
+                tools:ignore="Autofill,TextFields" />
+
+            <!-- LinearLayout สำหรับ Email และ Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <!-- EditText สำหรับ Email -->
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/email"
+                    android:padding="12dp"
+                    android:background="@color/white"
+                    android:drawablePadding="8dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginEnd="8dp"
+                    tools:ignore="Autofill,TextFields" />
+
+                <!-- EditText สำหรับ Number -->
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/number"
+                    android:padding="12dp"
+                    android:background="@color/white"
+                    android:drawablePadding="8dp"
+                    android:inputType="phone"
+                    tools:ignore="Autofill,TextFields" />
+
+            </LinearLayout>
+
+            <!-- EditText สำหรับ Password -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="16dp"
+                tools:ignore="Autofill,TextFields" />
+
+            <!-- EditText สำหรับ Confirm Password -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:drawablePadding="8dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="16dp"
+                tools:ignore="Autofill,TextFields" />
+
+            <!-- TextView สำหรับข้อความ "Already have an account? Login" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account"
+                android:textColor="#333333"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"/>
+
+
+            <!-- Button สำหรับสร้างบัญชี -->
+            <Button
+                android:id="@+id/btncreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/create_account"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF69B4"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:stateListAnimator="@null" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

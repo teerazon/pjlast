@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">NonochanomApp</string>
+    <string name="ร้านโนโน่_ชานมไข่มุก">ร้านโนโน่ ชานมไข่มุก</string>
+    <string name="nono_bubble_tea_shop">NONO BUBBLE TEA SHOP</string>
+    <string name="เข้าสู่ระบบ">เข้าสู่ระบบ</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="number">Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="create_account">Create Account</string>
+    <string name="login">LOGIN</string>
+    <string name="username_login">Username</string>
+    <string name="password_login">Password</string>
+    <string name="no_account_yet">No account yet?</string>
+    <string name="login_button">LOGIN</string>
+    <string name="thai_flag_icon" />
+    <string name="nonolnwza">nonolnwza</string>
+    <string name="nongnono56_gmail_com">nongnono56@gmail.com</string>
+    <string name="phonenumber">phonenumber</string>
+    <string name="_0825169999">0825169999</string>
+    <string name="loguot">Loguot</string>
+    <string name="profileicon">profileicon</string>
+    <string name="userinfohead">ข้อมูลผู้ใช้งาน</string>
+    <string name="labelswtichlang">เลือกภาษา/switch Language</string>
+    <string name="english">eng</string>
+    <string name="thai">ไทย</string>
+    <string name="menu">เมนู</string>
+    <string name="homeicontool">homeicontool</string>
+    <string name="history">history</string>
+    <string name="usericontool">usericontool</string>
+    <string name="cocoa">cocoa</string>
+    <string name="price">40</string>
+</resources>
