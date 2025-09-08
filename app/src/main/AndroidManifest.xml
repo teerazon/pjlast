@@ -12,17 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NonochanomApp">
         <activity
-            android:name=".LanguageswtichActivity"
-            android:exported="true" >
-
-        </activity>
-        <activity
-            android:name=".UserinfoActivity"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".MenuActivity"
+            android:name=".HistoryActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,10 +21,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".LanguageswtichActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".UserinfoActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MenuActivity"
             android:exported="true">
-
         </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".LoginActivity"
             android:exported="true" />

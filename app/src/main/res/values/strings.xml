@@ -33,4 +33,10 @@
     <string name="usericontool">usericontool</string>
     <string name="cocoa">cocoa</string>
     <string name="price">40</string>
+    <string name="order">order</string>
+    <string name="historyhead">ประวัติการทำรายการ</string>
+    <string name="menu_cocoa_size_small">menu : cocoa  size : small</string>
+    <string name="toppings_jelly">Toppings : Jelly</string>
+    <string name="tpt">ทอปปิ้ง : เยลลี่</string>
+    <string name="datetime">6/27/2025 , 11:26</string>
 </resources>
