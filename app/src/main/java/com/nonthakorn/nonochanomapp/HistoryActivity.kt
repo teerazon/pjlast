@@ -1,9 +1,11 @@
 package com.nonthakorn.nonochanomapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -89,6 +91,31 @@ class HistoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_history)
+
+        // ค้นหา Button และ TextView จาก ID ที่กำหนดไว้ใน XML
+        val nav_home: ImageView = findViewById(R.id.nav_home)
+        val nav_user: ImageView = findViewById(R.id.nav_user)
+        val icon_flag: ImageView = findViewById(R.id.icon_flag)
+
+        // ตั้งค่าการคลิกสำหรับปุ่ม
+        nav_home.setOnClickListener {
+            // สร้าง Intent เพื่อย้ายไปยัง HomeActivity
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+
+        // ตั้งค่าการคลิกสำหรับข้อความ
+        nav_user.setOnClickListener {
+            // สร้าง Intent เพื่อย้ายไปยัง HomeActivity
+            val intent = Intent(this, UserinfoActivity::class.java)
+            startActivity(intent)
+        }
+
+        icon_flag.setOnClickListener {
+            // สร้าง Intent เพื่อย้ายไปยัง HomeActivity
+            val intent = Intent(this, LanguageswtichActivity::class.java)
+            startActivity(intent)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

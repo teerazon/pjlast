@@ -1,6 +1,10 @@
 package com.nonthakorn.nonochanomapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,6 +15,24 @@ class MenudetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_menudetail)
+
+        val order_button: Button = findViewById(R.id.order_button)
+        val back_button: ImageButton = findViewById(R.id.back_button)
+
+        // ตั้งค่าการคลิกสำหรับปุ่ม
+        back_button.setOnClickListener {
+            // สร้าง Intent เพื่อย้ายไปยัง HomeActivity
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+
+        // ตั้งค่าการคลิกสำหรับข้อความ
+        order_button.setOnClickListener {
+            // สร้าง Intent เพื่อย้ายไปยัง HomeActivity
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

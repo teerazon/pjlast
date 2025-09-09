@@ -91,6 +91,7 @@ class MenuActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu)
 
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -205,6 +206,7 @@ class MenuActivity : AppCompatActivity() {
     private fun onProductClick(product: Product) {
 
         val intent = Intent(this, MenudetailActivity::class.java)
+        startActivity(intent)
 
         if (!product.isAvailable) {
             Toast.makeText(this, "${product.name} ขณะนี้ไม่พร้อมให้บริการ", Toast.LENGTH_SHORT).show()
