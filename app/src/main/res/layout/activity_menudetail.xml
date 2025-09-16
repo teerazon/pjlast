@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cocoa" />
+        app:srcCompat="@drawable/product01" />
 
     <!-- Back Arrow - Placed on top of the image -->
     <ImageButton
@@ -59,7 +59,7 @@
                 android:id="@+id/drink_name_th"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/น้ำโกโก้"
+                android:text="@string/น้ำมะพร้าว"
                 android:textColor="@android:color/black"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -69,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="@string/cocoa"
+                android:text="@string/coconut"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="20sp" />
 
@@ -113,12 +113,13 @@
                 android:id="@+id/size_radio_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
-                <LinearLayout
+                <!-- Small Cup Option -->
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:paddingVertical="8dp">
 
                     <RadioButton
@@ -128,61 +129,82 @@
                         android:layout_weight="1"
                         android:text="@string/แก้วเล็ก"
                         android:textSize="18sp"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        android:checked="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/price_small" />
 
                     <TextView
+                        android:id="@+id/price_small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/_10"
                         android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <LinearLayout
+                <!-- Medium Cup Option -->
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:paddingVertical="8dp">
 
                     <RadioButton
                         android:id="@+id/radio_medium"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="@string/แก้วกลาง"
                         android:textSize="18sp"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/price_medium" />
 
                     <TextView
+                        android:id="@+id/price_medium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/_20"
                         android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <LinearLayout
+                <!-- Large Cup Option -->
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:paddingVertical="8dp">
 
                     <RadioButton
                         android:id="@+id/radio_large"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="@string/แก้วใหญ่"
                         android:textSize="18sp"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/price_large" />
 
                     <TextView
+                        android:id="@+id/price_large"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/_35"
                         android:textSize="18sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
             </RadioGroup>
 
             <!-- Line Separator -->
@@ -212,7 +234,8 @@
                 android:textColor="@android:color/darker_gray"
                 android:textSize="16sp" />
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/topping_radio_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -224,8 +247,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/เพิ่มไข่มุก"
-                    android:textSize="18sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/radio_jelly"
@@ -234,9 +256,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:text="@string/เพิ่มเยลลี่"
-                    android:textSize="18sp"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </LinearLayout>
+                    android:textSize="18sp" />
+            </RadioGroup>
 
             <!-- Line Separator -->
             <View
@@ -256,15 +277,20 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/notes_placeholder"
+            <EditText
+                android:id="@+id/notes_edittext"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="120dp"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/dotted_line_background"
-                android:padding="8dp"
-                android:text="@string/line"
-                android:textSize="18sp" />
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/กรุณาระบุข้อมูลเพิ่มเติม"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColorHint="@android:color/darker_gray"
+                tools:ignore="Autofill" />
         </LinearLayout>
     </ScrollView>
 

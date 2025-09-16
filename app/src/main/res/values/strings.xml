@@ -59,5 +59,9 @@
     <string name="_20">20 บาท</string>
     <string name="แก้วกลาง">แก้วกลาง</string>
     <string name="sign_in_of_login">Sign in</string>
+    <string name="กรุณาระบุข้อมูลเพิ่มเติม">กรุณาระบุข้อมูลเพิ่มเติม</string>
+    <string name="น้ำมะพร้าว">น้ำมะพร้าว</string>
+    <string name="coconut">coconut</string>
+    <string name="menu_eng">Menu</string>
 
 </resources>

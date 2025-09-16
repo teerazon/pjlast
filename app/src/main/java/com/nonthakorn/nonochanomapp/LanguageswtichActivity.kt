@@ -2,6 +2,7 @@ package com.nonthakorn.nonochanomapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -18,9 +19,17 @@ class LanguageswtichActivity : AppCompatActivity() {
         // ค้นหา Button และ TextView จาก ID ที่กำหนดไว้ใน XML
 
         val btnback: ImageView = findViewById(R.id.btnback)
+        val english_button: Button = findViewById(R.id.english_button)
+        val thai_button: Button = findViewById(R.id.thai_button)
 
         // ตั้งค่าการคลิกสำหรับปุ่ม
         btnback.setOnClickListener {
+            // สร้าง Intent เพื่อย้ายไปยัง HomeActivity
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+        
+        thai_button.setOnClickListener {
             // สร้าง Intent เพื่อย้ายไปยัง HomeActivity
             val intent = Intent(this, MenuActivity::class.java)
             startActivity(intent)

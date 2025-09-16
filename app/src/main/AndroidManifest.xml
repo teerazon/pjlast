@@ -12,16 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NonochanomApp">
         <activity
+            android:name=".MenuEngActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatusActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenudetailActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".HistoryActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".LanguageswtichActivity"
             android:exported="true" />
@@ -30,9 +31,7 @@
             android:exported="true" />
         <activity
             android:name=".MenuActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
@@ -41,7 +40,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
